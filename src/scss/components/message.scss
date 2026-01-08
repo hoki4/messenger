@@ -18,7 +18,7 @@
     align-self: flex-end;
     flex-direction: row-reverse;
 
-    .message__content {
+    .message__text {
       background-color: $color-primary;
       color: $color-white;
       border-radius: $radius-lg $radius-lg 0 $radius-lg;
@@ -34,14 +34,11 @@
     align-self: flex-end;
   }
 
-  &__content {
+  &__text {
     padding: $spacing-md $spacing-lg;
     background-color: $color-white;
     border-radius: $radius-lg $radius-lg $radius-lg 0;
     box-shadow: $shadow-sm;
-  }
-
-  &__text {
     font-size: $font-size-sm;
     line-height: 1.5;
   }
