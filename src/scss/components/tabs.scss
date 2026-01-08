@@ -1,0 +1,27 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.tab {
+  @include button-reset;
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  color: $color-gray-600;
+  background-color: transparent;
+  border-radius: $radius-xl;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  @include focus-visible;
+
+  &:hover {
+    background-color: $color-gray-100;
+  }
+
+  &--active {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}

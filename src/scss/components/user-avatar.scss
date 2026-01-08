@@ -1,0 +1,26 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.user-avatar {
+  @include button-reset;
+  display: block;
+  border-radius: $radius-full;
+  overflow: hidden;
+  @include focus-visible;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    border-radius: $radius-full;
+    object-fit: cover;
+  }
+
+  &--header {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.chat-preview {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: $spacing-md;
+  padding: $spacing-md $spacing-lg;
+  transition: background-color 0.2s ease;
+  @include focus-visible;
+
+  &:hover {
+    background-color: $color-gray-50;
+  }
+
+  &__avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $radius-full;
+      object-fit: cover;
+    }
+  }
+
+  &__status {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $color-white;
+    border-radius: $radius-full;
+
+    &--online {
+      background-color: $color-success;
+    }
+  }
+
+  &__content {
+    min-width: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__name {
+    font-size: $font-size-sm;
+    font-weight: 600;
+    color: $color-gray-900;
+    @include text-ellipsis;
+  }
+
+  &__time {
+    font-size: $font-size-xs;
+    color: $color-gray-400;
+    flex-shrink: 0;
+  }
+
+  &__message {
+    font-size: $font-size-sm;
+    color: $color-gray-500;
+    @include text-ellipsis;
+  }
+
+  &__badge {
+    width: 10px;
+    height: 10px;
+    background-color: $color-success;
+    border-radius: $radius-full;
+    flex-shrink: 0;
+  }
+}

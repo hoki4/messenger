@@ -1,0 +1,48 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.message {
+  display: flex;
+  gap: $spacing-sm;
+  max-width: 70%;
+
+  @include mobile {
+    max-width: 85%;
+  }
+
+  &--incoming {
+    align-self: flex-start;
+  }
+
+  &--outgoing {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+
+    .message__content {
+      background-color: $color-primary;
+      color: $color-white;
+      border-radius: $radius-lg $radius-lg 0 $radius-lg;
+    }
+  }
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: $radius-full;
+    object-fit: cover;
+    flex-shrink: 0;
+    align-self: flex-end;
+  }
+
+  &__content {
+    padding: $spacing-md $spacing-lg;
+    background-color: $color-white;
+    border-radius: $radius-lg $radius-lg $radius-lg 0;
+    box-shadow: $shadow-sm;
+  }
+
+  &__text {
+    font-size: $font-size-sm;
+    line-height: 1.5;
+  }
+}

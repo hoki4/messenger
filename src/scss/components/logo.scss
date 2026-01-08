@@ -1,0 +1,24 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  color: $color-primary;
+  @include focus-visible;
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-gray-900;
+
+    @include mobile-small {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    &--active {
+      .chat-preview {
+        background-color: $color-gray-100;
+      }
+    }
+  }
+}
