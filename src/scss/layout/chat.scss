@@ -1,0 +1,47 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $color-gray-50;
+
+  &__messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    padding: $spacing-xl;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $color-gray-300 transparent;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-gray-300;
+      border-radius: $radius-full;
+    }
+
+    @include mobile {
+      padding: $spacing-md;
+    }
+  }
+
+  &__footer {
+    padding: $spacing-md $spacing-xl;
+    background-color: $color-white;
+    border-top: 1px solid $color-gray-200;
+
+    @include mobile {
+      padding: $spacing-md;
+    }
+  }
+}
