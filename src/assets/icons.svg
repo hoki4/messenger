@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-logo" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="7" height="7" rx="1" fill="currentColor"/>
+    <rect x="3" y="14" width="7" height="7" rx="1" fill="currentColor"/>
+    <rect x="14" y="3" width="7" height="7" rx="1" fill="currentColor"/>
+    <rect x="14" y="14" width="7" height="7" rx="1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-home" viewBox="0 0 24 24">
+    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+
+  <symbol id="icon-contacts" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+  </symbol>
+
+  <symbol id="icon-notifications" viewBox="0 0 24 24">
+    <path d="M18 8A6 6 0 106 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+
+  <symbol id="icon-emoji" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="9" cy="9" r="1" fill="currentColor"/>
+    <circle cx="15" cy="9" r="1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-attach" viewBox="0 0 24 24">
+    <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+
+  <symbol id="icon-send" viewBox="0 0 24 24">
+    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M22 2L15 22l-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+</svg>
